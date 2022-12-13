@@ -1,0 +1,35 @@
+:root {
+  // Colors ------------------------------
+  --color-primary: #00673e;
+  --color-primary-pale: #befee4;
+  --color-primary-light: #017949;
+  --color-primary-dark: #00331f;
+  --color-accent-1: #67003e;
+  --color-accent-1-light: #febee4;
+  --color-accent-2: #3e6700;
+  --color-accent-2-light: #e4febe;
+  --color-accent-3: #673e00;
+  --color-accent-3-light: #fee4be;
+  --color-accent-4: #003e67;
+  --color-accent-4-light: #bee4fe;
+  --color-accent-5: #3e0067;
+  --color-accent-5-light: #e4befe;
+  --color-accent-6: #3e6767;
+  --color-accent-6-light: #e4fefe;
+  --color-accent-7: #3e3e67;
+  --color-accent-7-light: #e4e4fe;
+  --color-accent-8: #676700;
+  --color-accent-8-light: #fefebe;
+  --color-alert: #d8b31b;
+  --color-alert-dark: #b69511;
+  --color-alert-light: #d3b744;
+  --color-error: #670c03;
+  --color-error-dark: #3f0601;
+  --color-error-light: #852219;
+
+  // Reusable Style ------------------------------
+  --transition: .2s;
+  --radius: .5rem;
+  --shadow: 0 0.1875rem .25rem #0003;
+  --shadow-large: 0 .25rem .5rem #0004;
+}

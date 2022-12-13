@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact</title>
+    <link rel="stylesheet" href="./css/main2.css" />
+    <script src="./js/main.js" defer></script>
+  </head>
+  <body>
+    <header class="masthead header" role="banner">
+      <div class="container">
+        <a href="/" class="logo link-light">
+          <strong>Serdar Ulutas</strong>
+        </a>
+        <nav id="nav" role="navigation">
+          <ul class="nav__container">
+            <li class="nav__item">
+              <a href="./index.html" class="link-light"
+                ><i class="bi bi-house"></i>Home</a
+              >
+            </li>
+            <li class="nav__item link-light">
+              <a href="./portfolio.html" class="link-light"
+                ><i class="bi bi-lightning-charge"></i>Portfolio</a
+              >
+            </li>
+            <li class="nav__item">
+              <a href="./contact.html" aria-current="true" class="link-light"
+                ><i class="bi bi-envelope"></i>Contact</a
+              >
+            </li>
+          </ul>
+        </nav>
+
+        <a class="nav-toggle" href="#nav" aria-label="Click to open mobile nav">
+          <span class="tog top"></span>
+          <span class="tog middle"></span>
+          <span class="tog bottom"></span>
+        </a>
+      </div>
+    </header>
+    <main id="main" role="main">
+      <div class="contact--wrapper">
+        <div class="container">
+          <form action="./index.html" class="contact__form">
+            <h2>Get in touch</h2>
+
+            <div class="contact__form__fieldset fullname-container">
+              <label class="required" for="full-name">What's your name</label>
+              <input
+                type="text"
+                name="full-name"
+                id="full-name"
+                placeholder="Your name"
+                class="contact__form__field"
+                required
+              />
+            </div>
+            <div class="contact__form__fieldset email-container">
+              <label class="required" for="email">Your e-mail address</label>
+              <input
+                type="email"
+                name="email"
+                id="email"
+                class="contact__form__field"
+                placeholder="Email"
+                required
+              />
+            </div>
+            <div class="contact__form__fieldset email-container">
+              <label class="required" for="tel">Your phone number</label>
+              <input
+                type="tel"
+                name="tel"
+                id="tel"
+                placeholder="Your phone"
+                class="contact__form__field"
+              />
+            </div>
+
+            <div class="contact__form__fieldset email-container">
+              <label class="required" for="startdate">Start date</label>
+              <input
+                type="date"
+                name="startdate"
+                id="startdate"
+                placeholder="Start date"
+                class="contact__form__field"
+              />
+            </div>
+
+            <div class="contact__form__fieldset email-container">
+              <label class="required" for="enddate">End date</label>
+              <input
+                type="date"
+                name="enddate"
+                id="enddate"
+                placeholder="Start date"
+                class="contact__form__field"
+              />
+            </div>
+
+            <div class="contact__form__fieldset message-container">
+              <label class="required validate" for="message"
+                >Your message / project needs</label
+              >
+              <textarea
+                name="message"
+                id="message"
+                required
+                class="contact__form__field"
+                placeholder="Details about your project"
+              ></textarea>
+            </div>
+
+            <input
+              type="submit"
+              value="Submit"
+              class="btn btn--secondary"
+              id="submit"
+            />
+          </form>
+        </div>
+      </div>
+
+      <div class="contact__me">
+        <div class="container">
+          <div class="contact__me__item">
+            <i class="bi bi-envelope-at"></i>
+            <a href="mailto:serdar.ulutas@gmail.com">serdar.ulutas@gmail.com</a>
+          </div>
+
+          <div class="contact__me__item">
+            <i class="bi bi-telephone"></i>
+            <a href="tel:+15142646506">+1-514-264-6506</a>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <a href="/" class="logo link-light">
+          <strong>Serdar Ulutas</strong>
+        </a>
+        <nav id="nav" role="navigation">
+          <ul class="nav__container">
+            <li class="nav__item">
+              <a href="./index.html" aria-current="true" class="link-light"
+                >Home</a
+              >
+            </li>
+            <li class="nav__item">
+              <a href="./portfolio.html" class="link-light">Portfolio</a>
+            </li>
+            <li class="nav__item">
+              <a href="./contact.html" class="link-light">Contact</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+
+      <div class="container">
+        <div class="copy text-light">&copy; 2022 - Serdar Ulutas</div>
+        <div class="privacy">
+          <a href="." class="link-light">Privacy Policy</a>
+        </div>
+      </div>
+    </footer>
+
+    <div class="click-to-close"></div>
+  </body>
+</html>

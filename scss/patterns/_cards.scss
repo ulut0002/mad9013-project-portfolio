@@ -1,0 +1,39 @@
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  border-radius: $radius;
+  border: 0.125rem solid $color__primary;
+  overflow: hidden;
+  text-decoration: none;
+  color: #000;
+  box-shadow: $shadow;
+  transition: transform $transition, box-shadow $transition;
+
+  &:hover,
+  &:focus {
+    box-shadow: $shadow-large;
+    transform: translateY(-0.5rem);
+  }
+
+  &__img {
+    @include embed(16 / 9);
+  }
+
+  &__content {
+    padding: 1.5rem;
+  }
+
+  &__title {
+    @include heading4;
+    margin-bottom: 0.5rem;
+  }
+
+  &__text {
+    margin: 0;
+  }
+
+  &__btn {
+    padding: 0 1.5rem 1.5rem;
+  }
+}

@@ -1,0 +1,21 @@
+.hero {
+  min-height: 80vh;
+  background-image: linear-gradient(to bottom, #0007, #0007),
+    url("../images/hero.jpg");
+  display: flex;
+  align-items: center;
+  text-align: center;
+  @include bgImage;
+
+  &__headline {
+    color: #fff;
+    margin: 0;
+
+    @include heading1;
+  }
+
+  &__byline {
+    color: #fff;
+    @include heading4;
+  }
+}

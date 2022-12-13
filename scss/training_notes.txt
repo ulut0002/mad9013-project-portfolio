@@ -1,0 +1,230 @@
+
+
+Baska dosyalardaki degiskenleri import etmek
+
+_variables.css has this:
+$bg: <color code>
+$primary: blue;
+
+//_base.cscc file:
+@use "variables"
+body{
+    background: variables.$bg;
+}
+
+//style.scss
+@use "variables" as var;
+@use "base";
+h1{
+    color: var.$primary;
+} 
+
+
+
+##########################
+extend
+.btn{
+    border: 0;
+    &-primary{
+        @extend .btn;
+        background-color: #ddd;
+    }
+    &-secondary{
+        @extend .btn;
+        background-color: #aaa;
+    }
+}
+
+
+
+#####################
+interpolation
+
+Define variable as expression: #{$varname + '--btn'}
+
+
+@mixin btn($name="", $bg: #444, $color: white){
+    .btn#{$name}{
+        background: $bg;
+        color: $col;
+    }
+}
+
+@include btn;
+@include btn("-primary",'3ab5e9');
+
+Bunu kesin kullan
+
+#####################
+Place holders
+
+similar to extend, but placeholders won't be compiled
+
+%btn{
+    background: #ccc;
+    color: white;
+}
+
+.btn-primary{
+    @extend %btn;
+    background: #3da11c;
+}
+
+.btn-secondary{
+    @extend %btn;
+    background: orange;
+}
+
+#####################
+
+Arrays:
+$myArray : [item1,item2,item3,"item 5"];
+
+index starts from 1.
+
+get array element: 
+    #{nth($myArray,1)}
+
+array length:
+    length($myList)
+
+
+Change element array:
+    set-nth($mylist,2,newValue)
+This is immutable
+    so: $mylist = set-nth($mylist,2,newValue)
+
+
+Search items in array
+    index($myList,value);
+
+
+Add an item to the end of the array
+    append(myList,newValue,comma|space)
+
+
+merge two lists
+    join($list1, $list2, comma|space)
+
+
+    zip(list,list2)
+
+    is-bracketed(list)
+
+
+
+####################
+####################
+####################
+####################
+
+
+                "each"
+
+
+each <var> in <expression>{
+
+}
+
+
+example:
+$buttons: -primary #fff hotpink, -secondary green yellow;
+
+@each $name, $bg $col  in $buttons{
+    @include btn($name, $bg, $col);
+}
+
+
+
+####################
+####################
+####################
+####################
+
+For loop
+
+@for <var> to|through <expression>{
+
+}
+
+$font-size: (3rem,2.5rem,2rem);
+
+@for $i from 1 through length($font-size){
+    h#{i}{
+        font-size: nth($font-size,$i);
+
+    }
+}
+
+
+
+
+
+####################
+####################
+####################
+####################
+
+maps
+provides key-value pairs: (<key>: <val>, ...)
+keys have to unique
+
+must use: 
+    @use "sass:map"
+to include the functionality
+
+maps are immutable. 
+
+$colorList:(
+    "primary": RoyalBlue,
+    "secondary": Green,
+    "accent": "blue"
+)
+
+map.get($colorList.primary)
+
+map.get() or map-get()
+map.set() or map-set()
+
+map.merge() or map.deep-merge()
+
+map.remove or map.deep-remove()
+
+map.keys(),
+map.values(),
+has.key()
+
+
+
+####################
+####################
+####################
+####################
+
+Conditions
+$oval: false;
+@if $oval{
+    css
+}@else{
+    css
+}
+
+also you can use == or !=
+
+
+
+####################
+####################
+####################
+
+colors
+
+add: 
+    @use "sass:color"
+
+Read the documentation for color adjustments. 
+
+
+
+////
+Bootstrap

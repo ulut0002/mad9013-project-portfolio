@@ -1,0 +1,16 @@
+.footer {
+  background-color: #222;
+  color: #fff;
+  padding: 2rem 0;
+
+  a {
+    color: #fff;
+
+    &:hover,
+    &:focus {
+      color: #ffffffaa;
+    }
+
+  }
+
+}

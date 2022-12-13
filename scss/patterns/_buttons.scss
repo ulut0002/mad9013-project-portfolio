@@ -1,0 +1,25 @@
+.btn {
+  background-color: $color__primary;
+  border: 0.0625rem solid $color__primary--light;
+  box-shadow: 0 0.1875rem 0.25rem #0004;
+  color: #fff;
+  padding: .75em 1.25em;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: bold;
+  border-radius: 0.25rem;
+  display: inline-block;
+  cursor: pointer;
+  transition:
+    color $transition,
+    background-color $transition,
+    border-color $transition;
+
+  &:hover,
+  &:focus {
+    background-color: $color__primary--dark;
+    border-color: $color__primary;
+    color: #fff;
+  }
+  
+}
