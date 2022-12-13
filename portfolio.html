@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="./css/main2.css" />
     <script src="./js/main.js" defer></script>
   </head>
-  <body>
+  <body class="flex-col flex-jb">
     <header class="masthead header" role="banner">
       <div class="container">
         <a href="/" class="logo link-light">
@@ -49,7 +49,7 @@
         aria-label="You are about to view Serdar's projects. Tab to continue."
       >
         <div class="container">
-          <h2 class="card__group__header">Some of my projects</h2>
+          <h1 class="card__group__header">Some of my projects</h1>
 
           <ul class="row row-cards">
             <li class="col" tabindex="0">
@@ -57,6 +57,7 @@
                 <a
                   href="https://www.figma.com/proto/pNkW2kroancicTVzQ1Imv0/Wireframe?page-id=557%3A4335&node-id=557%3A4600&viewport=623%2C211%2C0.21&scaling=scale-down&starting-point-node-id=557%3A4600"
                   target="_blank"
+                  class="link-dark"
                 >
                   <img
                     src="./images/muzika.jpeg"
@@ -64,8 +65,9 @@
                     class="card__image"
                     aria-hidden="true"
                   />
+
+                  <h2 class="card__title">Muzika</h2>
                 </a>
-                <p class="card__title">Muzika</p>
                 <p class="card__content">
                   Muzika is a music streaming app that allows users to listen to
                   their favorite tracks on demand. Designed with Figma, the app
@@ -79,6 +81,7 @@
                 <a
                   href="https://ulut0002.github.io/tmdb-jamstack/"
                   target="_blank"
+                  class="link-dark"
                 >
                   <img
                     src="./images/jamstack.jpeg"
@@ -86,9 +89,9 @@
                     class="card__image"
                     aria-hidden="true"
                   />
-                </a>
 
-                <p class="card__title">JamStack</p>
+                  <h2 class="card__title">JamStack</h1>
+                </a>
                 <p class="card__content">
                   JamStack is a single page web application that is built using
                   JavaScript and connects to an external API to retrieve movie
@@ -101,15 +104,21 @@
 
             <li class="col" tabindex="0">
               <div class="card">
-                <a href="https://ulut0002.github.io/data-mgmt/" target="_blank">
+                <a
+                  href="https://ulut0002.github.io/data-mgmt/"
+                  target="_blank"
+                  class="link-dark"
+                >
                   <img
                     src="./images/cats.jpeg"
-                    alt="Cat logo"
+                    alt="Picture of a cool cat"
                     class="card__image"
                     aria-hidden="true"
                   />
+
+                  <h2 class="card__title">Cat Overload</h2>
                 </a>
-                <p class="card__title">Cat Overload</p>
+
                 <p class="card__content">
                   The single-page app utilizes a grid box layout and connects to
                   a cat image API to provide users with a visually appealing and
