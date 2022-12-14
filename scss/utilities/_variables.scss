@@ -27,7 +27,39 @@ $color__error--dark: var(--color-error-dark);
 $color__error--light: var(--color-error-light);
 
 // Reusable Style ------------------------------
+
+$font-h1: var(--font-h1);
+$font-h2: var(--font-h2);
+$font-h3: var(--font-h3);
+$font-h4: var(--font-h4);
+$font-h5: var(--font-h5);
+$font-h6: var(--font-h6);
+
 $transition: var(--transition);
 $radius: var(--radius);
 $shadow: var(--shadow);
 $shadow-large: var(--shadow-large);
+
+$color-white: var(--color-white);
+$color-dark-1: var(--color-dark-1);
+
+$color-dark-2: var(--color-dark-2);
+$color-light-1: var(--color-light-1);
+
+$color-gray-darker: var(--color-gray-darker);
+
+$color-gray-dark: var(--color-gray-dark);
+$color-gray: var(--color-gray);
+$color-gray-light: var(--color-gray-light);
+$color-gray-lighter: var(--color-gray-lighter);
+
+$text-color-dark: var(--text-color-dark);
+
+$text-color-light: var(--text-color-light);
+$text-color-hover-1: var(--text-color-hover-1);
+$text-color-hover-2: var(--text-color-hover-2);
+$color-yellow: var(--color-yellow);
+
+$shadow: var(--shadow);
+$shadow: var(--transition);
+$radius: var(--radius);

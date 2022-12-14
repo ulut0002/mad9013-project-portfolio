@@ -1,35 +1,94 @@
 :root {
   // Colors ------------------------------
-  --color-primary: #00673e;
-  --color-primary-pale: #befee4;
-  --color-primary-light: #017949;
-  --color-primary-dark: #00331f;
-  --color-accent-1: #67003e;
-  --color-accent-1-light: #febee4;
-  --color-accent-2: #3e6700;
-  --color-accent-2-light: #e4febe;
-  --color-accent-3: #673e00;
-  --color-accent-3-light: #fee4be;
-  --color-accent-4: #003e67;
-  --color-accent-4-light: #bee4fe;
-  --color-accent-5: #3e0067;
-  --color-accent-5-light: #e4befe;
-  --color-accent-6: #3e6767;
-  --color-accent-6-light: #e4fefe;
-  --color-accent-7: #3e3e67;
-  --color-accent-7-light: #e4e4fe;
-  --color-accent-8: #676700;
-  --color-accent-8-light: #fefebe;
-  --color-alert: #d8b31b;
-  --color-alert-dark: #b69511;
-  --color-alert-light: #d3b744;
-  --color-error: #670c03;
-  --color-error-dark: #3f0601;
-  --color-error-light: #852219;
 
-  // Reusable Style ------------------------------
-  --transition: .2s;
-  --radius: .5rem;
-  --shadow: 0 0.1875rem .25rem #0003;
-  --shadow-large: 0 .25rem .5rem #0004;
+  // --color-primary: #00673e;
+  // --color-primary-pale: #befee4;
+  // --color-primary-light: #017949;
+  // --color-primary-dark: #00331f;
+  // --color-accent-1: #67003e;
+  // --color-accent-1-light: #febee4;
+  // --color-accent-2: #3e6700;
+  // --color-accent-2-light: #e4febe;
+  // --color-accent-3: #673e00;
+  // --color-accent-3-light: #fee4be;
+  // --color-accent-4: #003e67;
+  // --color-accent-4-light: #bee4fe;
+  // --color-accent-5: #3e0067;
+  // --color-accent-5-light: #e4befe;
+  // --color-accent-6: #3e6767;
+  // --color-accent-6-light: #e4fefe;
+  // --color-accent-7: #3e3e67;
+  // --color-accent-7-light: #e4e4fe;
+  // --color-accent-8: #676700;
+  // --color-accent-8-light: #fefebe;
+  // --color-alert: #d8b31b;
+  // --color-alert-dark: #b69511;
+  // --color-alert-light: #d3b744;
+  // --color-error: #670c03;
+  // --color-error-dark: #3f0601;
+  // --color-error-light: #852219;
+
+  // // Reusable Style ------------------------------
+  // --transition: 0.2s;
+  // --radius: 0.5rem;
+  // --shadow: 0 0.1875rem 0.25rem #0003;
+  // --shadow-large: 0 0.25rem 0.5rem #0004;
+
+  --font-h1: 1.802rem;
+  --font-h2: 1.602rem;
+  --font-h3: 1.424rem;
+  --font-h4: 1.266rem;
+  --font-h5: 1.125rem;
+  --font-h6: 1rem;
+  --font-small: 0.889rem;
+
+  --color-white: #fbf4f4;
+  --color-dark-1: hsl(210, 11%, 15%);
+  --color-dark-2: hsl(210, 11%, 35%);
+  --color-light-1: hsl(60, 20%, 98%);
+
+  --color-gray-darker: hsl(215, 16%, 27%);
+  --color-gray-dark: hsl(215, 16%, 37%);
+  --color-gray: hsl(215, 16%, 47%);
+  --color-gray-light: hsl(215, 16%, 57%);
+  --color-gray-lighter: hsl(215, 16%, 67%);
+
+  --text-color-dark: hsl(215, 16%, 14%);
+  --text-color-light: hsl(213, 30%, 93%);
+  --text-color-hover-1: hsl(8, 65%, 50%);
+  --text-color-hover-2: hsl(53, 100%, 50%);
+
+  --color-yellow: hsl(53, 100%, 50%);
+
+  --img-max-height: 12rem;
+
+  --shadow: 0 0.5rem 1rem hsla(0, 0%, 0%, 0.267);
+  --transition: 0.15s;
+  --radius: 0.25em;
+}
+
+@media only screen and (min-width: 45em) {
+  :root {
+    --font-h1: 2.488rem;
+    --font-h2: 2.074rem;
+    --font-h3: 1.728rem;
+    --font-h4: 1.44rem;
+    --font-h5: 1.2rem;
+    --font-h6: 1rem;
+    --font-small: 0.833rem;
+    --img-max-height: 14rem;
+  }
+}
+
+@media only screen and (min-width: 60em) {
+  :root {
+    --font-h1: 3.052rem;
+    --font-h2: 2.441rem;
+    --font-h3: 1.953rem;
+    --font-h4: 1.563rem;
+    --font-h5: 1.25rem;
+    --font-h6: 1rem;
+    --font-small: 0.8rem;
+    --img-max-height: 16rem;
+  }
 }

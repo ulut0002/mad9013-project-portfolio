@@ -1,12 +1,14 @@
 body {
-  display: grid;
-  grid-template-rows: auto auto 1fr auto;
-  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: $color-white;
+  color: $color-gray-lighter;
+  @include flex-col;
 }
 
 .container {
-  max-width: 70em;
-  width: 100%;
+  max-width: min(65em, 100%);
   margin: 0 auto;
   padding-left: 1.5rem;
   padding-right: 1.5rem;
@@ -15,6 +17,10 @@ body {
 section > .container {
   padding-top: 4rem;
   padding-bottom: 4rem;
+}
+
+img {
+  width: 100%;
 }
 
 .padding-t {
@@ -42,7 +48,7 @@ section > .container {
 }
 
 .parent-styles {
-  border: .25rem dashed #ccc;
+  border: 0.25rem dashed #ccc;
 }
 
 .block {
@@ -58,10 +64,6 @@ section > .container {
   gap: 1rem;
 
   @media only screen and (min-width: 38em) {
-
     grid-template-columns: repeat(3, 1fr);
-  
   }
-
 }
-
