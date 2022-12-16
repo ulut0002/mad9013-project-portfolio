@@ -5,10 +5,15 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Contact</title>
-    <link rel="stylesheet" href="./css/main2.css" />
+    <!-- <link rel="stylesheet" href="./css/main2.css" /> -->
+    <link rel="stylesheet" href="./css/main.css" />
     <script src="./js/main.js" defer></script>
   </head>
-  <body class="flex-col flex-jb">
+  <body class="flex-col flex-jb" id="page">
+    <ul class="skip-links">
+      <li><a href="#nav">Skip to main navigation</a></li>
+      <li><a href="#main">Skip to main content</a></li>
+    </ul>
     <header class="masthead header" role="banner">
       <div class="container">
         <a href="." class="logo link-light">
@@ -155,7 +160,7 @@
 
     <footer class="footer">
       <div class="container">
-        <a href="/" class="logo link-light">
+        <a href="." class="logo link-light">
           <strong>Serdar Ulutas</strong>
         </a>
         <nav id="nav" role="navigation">
@@ -185,4 +190,7 @@
 
     <div class="click-to-close"></div>
   </body>
+  <a href="#page" class="to-top" aria-label="Click to go to the top of the page"
+    >To Top</a
+  >
 </html>

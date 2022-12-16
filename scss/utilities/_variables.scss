@@ -1,39 +1,65 @@
 // Colors ------------------------------
-$color__primary: var(--color-primary);
-$color__primary-pale: var(--color-primary-pale);
-$color__primary--light: var(--color-primary-light);
-$color__primary--dark: var(--color-primary-dark);
-$color__accent-1: var(--color-accent-1);
-$color__accent-1--light: var(--color-accent-1-light);
-$color__accent-2: var(--color-accent-2);
-$color__accent-2--light: var(--color-accent-2-light);
-$color__accent-3: var(--color-accent-3);
-$color__accent-3--light: var(--color-accent-3-light);
-$color__accent-4: var(--color-accent-4);
-$color__accent-4--light: var(--color-accent-4-light);
-$color__accent-5: var(--color-accent-5);
-$color__accent-5--light: var(--color-accent-5-light);
-$color__accent-6: var(--color-accent-6);
-$color__accent-6--light: var(--color-accent-6-light);
-$color__accent-7: var(--color-accent-7);
-$color__accent-7--light: var(--color-accent-7-light);
-$color__accent-8: var(--color-accent-8);
-$color__accent-8--light: var(--color-accent-8-light);
-$color__alert: var(--color-alert);
-$color__alert--dark: var(--color-alert-dark);
-$color__alert--light: var(--color-alert-light);
-$color__error: var(--color-error);
-$color__error--dark: var(--color-error-dark);
-$color__error--light: var(--color-error-light);
+// $color__primary: var(--color-primary);
+// $color__primary-pale: var(--color-primary-pale);
+// $color__primary--light: var(--color-primary-light);
+// $color__primary--dark: var(--color-primary-dark);
+// $color__accent-1: var(--color-accent-1);
+// $color__accent-1--light: var(--color-accent-1-light);
+// $color__accent-2: var(--color-accent-2);
+// $color__accent-2--light: var(--color-accent-2-light);
+// $color__accent-3: var(--color-accent-3);
+// $color__accent-3--light: var(--color-accent-3-light);
+// $color__accent-4: var(--color-accent-4);
+// $color__accent-4--light: var(--color-accent-4-light);
+// $color__accent-5: var(--color-accent-5);
+// $color__accent-5--light: var(--color-accent-5-light);
+// $color__accent-6: var(--color-accent-6);
+// $color__accent-6--light: var(--color-accent-6-light);
+// $color__accent-7: var(--color-accent-7);
+// $color__accent-7--light: var(--color-accent-7-light);
+// $color__accent-8: var(--color-accent-8);
+// $color__accent-8--light: var(--color-accent-8-light);
+// $color__alert: var(--color-alert);
+// $color__alert--dark: var(--color-alert-dark);
+// $color__alert--light: var(--color-alert-light);
+// $color__error: var(--color-error);
+// $color__error--dark: var(--color-error-dark);
+// $color__error--light: var(--color-error-light);
 
 // Reusable Style ------------------------------
 
-$font-h1: var(--font-h1);
-$font-h2: var(--font-h2);
-$font-h3: var(--font-h3);
-$font-h4: var(--font-h4);
-$font-h5: var(--font-h5);
-$font-h6: var(--font-h6);
+$fonts-small: (
+  "h1": 1.802rem,
+  "h2": 1.602rem,
+  "h3": 1.424rem,
+  "h4": 1.266rem,
+  "h5": 1.125rem,
+  "h6": 1rem,
+  "small": 0.889rem,
+  "image-max-height": 12rem,
+);
+
+$fonts-medium: (
+  "h1": 2.488rem,
+  "h2": 2.074rem,
+  "h3": 1.728rem,
+  "h4": 1.44rem,
+  "h5": 1.2rem,
+  "h6": 1rem,
+  "small": 0.883rem,
+  "image-max-height": 14rem,
+);
+
+$fonts-large: (
+  "h1": 3.052rem,
+  "h2": 2.441rem,
+  "h3": 1.953rem,
+  "h4": 1.563rem,
+  "h5": 1.25rem,
+  "h6": 1rem,
+  "small": 0.8rem,
+  "image-max-height": 16rem,
+);
 
 $transition: var(--transition);
 $radius: var(--radius);
@@ -61,5 +87,5 @@ $text-color-hover-2: var(--text-color-hover-2);
 $color-yellow: var(--color-yellow);
 
 $shadow: var(--shadow);
-$shadow: var(--transition);
+$transition: var(--transition);
 $radius: var(--radius);

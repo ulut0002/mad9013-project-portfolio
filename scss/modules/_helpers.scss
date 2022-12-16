@@ -1,10 +1,25 @@
-.responsive-box {
-  .box {
-    padding: 1.5rem;
-    border-radius: $radius;
-    h2 {
-      margin: 0;
-      color: #fff;
-    }
-  }
+label,
+.label {
+  display: block;
+  margin-bottom: 0.25rem;
+  font-weight: 600;
+}
+
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+input:not([type="checkbox"]):not([type="radio"]):not([type="range"]),
+select,
+textarea {
+  display: block;
+  width: 100%;
+  font-size: 1rem;
+  padding: 0.5rem;
+  border-radius: 0.25em;
+  border: 0.0625rem solid $color-gray-dark;
 }

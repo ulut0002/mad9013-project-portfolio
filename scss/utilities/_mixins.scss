@@ -3,123 +3,22 @@
   flex-direction: column;
 }
 
-// EXCLUDE
+@mixin flex-jb {
+  justify-content: space-between;
+}
 
-@mixin hov {
-  &:hover,
-  &:focus {
+@mixin sm {
+  @content;
+}
+
+@mixin md {
+  @media only screen and (min-width: 45em) {
     @content;
   }
 }
 
-@mixin small {
-  @media only screen and (min-width: 25em) {
-    @content;
-  }
-}
-
-@mixin medium {
-  @media only screen and (min-width: 38em) {
-    @content;
-  }
-}
-
-@mixin large {
+@mixin lg {
   @media only screen and (min-width: 60em) {
     @content;
   }
-}
-
-@mixin grid($xs: 1, $s: 2, $m: 3, $l: 4, $gap: 0) {
-  display: grid;
-  grid-template-columns: repeat($xs, 1fr);
-
-  @if ($gap != 0) {
-    gap: #{$gap}rem;
-  }
-
-  @include small {
-    grid-template-columns: repeat($s, 1fr);
-  }
-
-  @include medium {
-    grid-template-columns: repeat($m, 1fr);
-  }
-
-  @include large {
-    grid-template-columns: repeat($l, 1fr);
-  }
-}
-
-$font-scale-s: 1.125;
-$font-scale-m: 1.2;
-$font-scale-l: 1.25;
-
-@mixin heading1 {
-  font-size: fontScale($font-scale-s, 5);
-  @include medium {
-    font-size: fontScale($font-scale-m, 5);
-  }
-  @include large {
-    font-size: fontScale($font-scale-l, 5);
-  }
-}
-
-@mixin heading2 {
-  font-size: fontScale($font-scale-s, 4);
-  @include medium {
-    font-size: fontScale($font-scale-m, 4);
-  }
-  @include large {
-    font-size: fontScale($font-scale-l, 4);
-  }
-}
-
-@mixin heading3 {
-  font-size: fontScale($font-scale-s, 3);
-  @include medium {
-    font-size: fontScale($font-scale-m, 3);
-  }
-  @include large {
-    font-size: fontScale($font-scale-l, 3);
-  }
-}
-
-@mixin heading4 {
-  font-size: fontScale($font-scale-s, 2);
-  @include medium {
-    font-size: fontScale($font-scale-m, 2);
-  }
-  @include large {
-    font-size: fontScale($font-scale-l, 2);
-  }
-}
-
-@mixin heading5 {
-  font-size: fontScale($font-scale-s, 1);
-  @include medium {
-    font-size: fontScale($font-scale-m, 1);
-  }
-  @include large {
-    font-size: fontScale($font-scale-l, 1);
-  }
-}
-
-@mixin embed($ratio: #{1 / 1}, $fit: cover) {
-  width: 100%;
-  aspect-ratio: $ratio;
-  display: flex;
-  img,
-  svg,
-  iframe {
-    display: block;
-    width: 100%;
-    object-fit: $fit;
-  }
-}
-
-@mixin bgImage($size: cover, $position: center) {
-  background-size: $size;
-  background-position: $position;
-  background-repeat: no-repeat;
 }

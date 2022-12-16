@@ -1,11 +1,14 @@
+@use "sass:map";
+
 .masthead {
   padding: 1rem 0;
-  background-color: $color__primary;
+  background-color: $color-dark-1;
   position: sticky;
   top: 0;
   left: 0;
   width: 100%;
   z-index: 10000;
+  border-bottom: 0.125em solid #000;
 
   .container {
     display: flex;
@@ -13,108 +16,88 @@
     align-items: center;
   }
 
-  a {
-    color: #fff;
-    text-decoration: none;
-    transition:
-      opacity $transition;
+  .logo {
+    letter-spacing: 0.0625rem;
 
-    &.logo:hover,
-    &.logo:focus {
-      opacity: .5;
+    @include sm {
+      font-size: map.get($fonts-small, "h4");
     }
-
-  }
-
-  .logo h1,
-  .logo strong {
-    color: #fff;
-    font-size: 1.5rem;
-    margin: 0;
-    position: relative;
-    z-index: 1;
+    @include md {
+      font-size: map.get($fonts-medium, "h4");
+    }
+    @include lg {
+      font-size: map.get($fonts-large, "h4");
+    }
   }
 
   nav {
     position: fixed;
     top: 0;
-    left: 0;
-    width: 100vw;
+    right: -66vw;
+    width: 66vw;
     height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    box-shadow: -0.125rem 0.1875rem 0.25rem rgba(0, 0, 0, .15);
-    background-color: $color__primary--dark;
-    opacity: 0;
-    pointer-events: none;
-    transition:
-      opacity $transition;
-    
+
+    box-shadow: -2px 3px 5px rgba(0, 0, 0, 0.15);
+    background-color: $color-dark-2;
+    transition: right 0.2s, top 0.2s;
+
+    @include md {
+      position: static;
+      top: auto;
+      left: auto;
+      width: auto;
+      height: auto;
+      box-shadow: none;
+      z-index: auto;
+      background-color: transparent;
+    }
+
+    a {
+      display: block;
+      text-decoration: none;
+
+      @include sm {
+        font-size: map.get($fonts-small, "h3");
+      }
+      @include md {
+        font-size: map.get($fonts-medium, "h6");
+        display: block;
+      }
+      @include lg {
+        font-size: map.get($fonts-large, "h6");
+      }
+      &:hover,
+      &:focus {
+        text-decoration: none;
+      }
+    }
+
     &.open {
-      opacity: 1;
-      pointer-events: all;
+      right: 0;
     }
 
     ul {
       padding: 6rem 1rem;
-      text-align: center;
+      text-align: right;
       margin: 0;
       list-style-type: none;
 
-      li:not(:last-child) {
-        margin-bottom: 1rem;
+      @include md {
+        display: flex;
+        padding: 0;
       }
 
-      a {
-        display: block;
-        @include heading3;
-        &[aria-current="page"],
-        &:hover,
-        &:focus {
-          text-decoration: underline;
+      li:not(:last-child) {
+        margin-bottom: 2rem;
+        @include md {
+          margin-bottom: 0;
+          margin-right: 2rem;
         }
       }
-
     }
-
   }
 
-  .btn {
-    font-size: 1.5rem;
-  }
-
-  // @media only screen and (min-width: 65em) {
-
-  //   nav {
-  //     position: static;
-  //     top: auto;
-  //     left: auto;
-  //     width: auto;
-  //     height: auto;
-  //     box-shadow: none;
-  //     z-index: auto;
-  //     background-color: transparent;
-  //     opacity: 1;
-  //     pointer-events: all;
-  
-  //     ul {
-  //       display: flex;
-  //       padding: 0;
-  
-  //       li:not(:last-child) {
-  //         margin-bottom: 0;
-  //         margin-right: 2rem;
-  //       }
-
-  //       a {
-  //         font-size: 1rem;
-  //       }
-  
-  //     }
-  
-  //   }
-  
+  // .btn {
+  //   font-size: 1.5rem;
   // }
-
 }

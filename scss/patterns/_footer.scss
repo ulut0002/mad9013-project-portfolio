@@ -1,16 +1,68 @@
+@use "sass:map";
+
 .footer {
-  background-color: #222;
-  color: #fff;
-  padding: 2rem 0;
+  background-color: $color-dark-1;
+  color: $color-white;
+  padding: 1rem 0;
+  margin-top: 3rem;
 
-  a {
-    color: #fff;
-
-    &:hover,
-    &:focus {
-      color: #ffffffaa;
-    }
-
+  .container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
   }
 
+  .nav__container {
+    display: flex;
+    list-style-type: none;
+    gap: 1rem;
+    @include sm {
+      font-size: map.get($fonts-small, "small");
+    }
+    @include md {
+      font-size: map.get($fonts-medium, "small");
+    }
+    @include lg {
+      font-size: map.get($fonts-large, "small");
+    }
+  }
+  .logo {
+    @include sm {
+      font-size: map.get($fonts-small, "small");
+    }
+    @include md {
+      font-size: map.get($fonts-medium, "small");
+    }
+    @include lg {
+      font-size: map.get($fonts-large, "small");
+    }
+  }
+  .disclaimer {
+    @include sm {
+      font-size: map.get($fonts-small, "small");
+    }
+    @include md {
+      font-size: map.get($fonts-medium, "small");
+    }
+    @include lg {
+      font-size: map.get($fonts-large, "small");
+    }
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+
+.copy,
+.privacy,
+.copyright {
+  @include sm {
+    font-size: map.get($fonts-small, "small");
+  }
+  @include md {
+    font-size: map.get($fonts-medium, "small");
+  }
+  @include lg {
+    font-size: map.get($fonts-large, "small");
+  }
 }

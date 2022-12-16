@@ -5,6 +5,13 @@ body {
   background-color: $color-white;
   color: $color-gray-lighter;
   @include flex-col;
+  @include flex-jb;
+
+  @include md {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
 }
 
 .container {
@@ -59,11 +66,19 @@ img {
   display: inline-block;
 }
 
-.grid-3 {
-  display: grid;
-  gap: 1rem;
+.md-full {
+  grid-column: 1 / -1;
+}
 
-  @media only screen and (min-width: 38em) {
-    grid-template-columns: repeat(3, 1fr);
-  }
+.md-1-2 {
+  grid-column: 1 / 2;
+}
+
+.md-2-2 {
+  grid-column: 2 / -1;
+}
+
+.md-center {
+  justify-self: end;
+  max-width: 50%;
 }

@@ -36,6 +36,7 @@ ol {
   &:hover,
   &:focus-visible {
     color: $text-color-hover-2;
+    text-decoration: none;
   }
 }
 
@@ -46,20 +47,10 @@ ol {
   &:hover,
   &:focus-visible {
     color: $text-color-hover-1;
+    text-decoration: none;
   }
 }
 
 .mr-0_5 {
   margin-right: 0.5rem;
-}
-
-a {
-  color: $color__primary;
-  transition: color $transition, background-color $transition,
-    border-color $transition, box-shadow $transition;
-
-  &:hover,
-  &:focus {
-    color: $color__primary--dark;
-  }
 }

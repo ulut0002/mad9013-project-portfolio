@@ -1,25 +1,54 @@
+@use "sass:map";
+
 .btn {
-  background-color: $color__primary;
-  border: 0.0625rem solid $color__primary--light;
-  box-shadow: 0 0.1875rem 0.25rem #0004;
+  background-color: $color-yellow;
+  border: 0.0625rem solid $color-yellow;
+
+  box-shadow: $shadow;
+
   color: #fff;
-  padding: .75em 1.25em;
+  padding: 0.55em 1.5em 0.5em;
   text-decoration: none;
-  text-transform: uppercase;
-  font-weight: bold;
+
+  // font-weight: bold;
+  font-family: inherit;
+  font-size: inherit;
+
   border-radius: 0.25rem;
   display: inline-block;
   cursor: pointer;
-  transition:
-    color $transition,
-    background-color $transition,
+  transition: color $transition, background-color $transition,
     border-color $transition;
 
   &:hover,
   &:focus {
-    background-color: $color__primary--dark;
-    border-color: $color__primary;
-    color: #fff;
+    background-color: $color-gray-dark;
+    border-color: $color-gray-dark;
+    // color: #fff;
   }
-  
+
+  &--large {
+    @include sm {
+      font-size: map.get($fonts-small, "h5");
+    }
+    @include md {
+      font-size: map.get($fonts-medium, "h5");
+    }
+    @include lg {
+      font-size: map.get($fonts-large, "h5");
+    }
+  }
+
+  &--secondary {
+    background-color: $color-yellow;
+    border-color: $color-yellow;
+    color: $text-color-dark;
+
+    &:hover,
+    &:focus-visible {
+      background-color: $text-color-dark;
+      border-color: $color-yellow;
+      color: $color-yellow;
+    }
+  }
 }

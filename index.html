@@ -5,11 +5,16 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Serdar Ulutas</title>
-    <link rel="stylesheet" href="./css/main2.css" />
+    <!-- <link rel="stylesheet" href="./css/main2.css" /> -->
+    <link rel="stylesheet" href="./css/main.css" />
     <script src="./js/main.js" defer></script>
   </head>
 
-  <body class="flex-col flex-jb">
+  <body class="flex-col flex-jb" id="page">
+    <ul class="skip-links">
+      <li><a href="#nav">Skip to main navigation</a></li>
+      <li><a href="#main">Skip to main content</a></li>
+    </ul>
     <header class="masthead header" role="banner">
       <div class="container">
         <a href="." class="logo link-light">
@@ -45,6 +50,9 @@
 
     <main id="main" role="main">
       <section class="banner" tabindex="0">
+        <!-- 
+          Hero image by Christian Kapeller https://unsplash.com/photos/a9BKBuhwzeY 
+        -->
         <div class="container">
           <div class="banner__content">
             <h1 class="banner__title">Hi. I am Serdar Ulutas</h1>
@@ -79,7 +87,7 @@
                   aria-hidden="true"
                 />
 
-                <p class="card__title">HTML</p>
+                <h2 class="card__title">HTML</h2>
                 <p class="card__content">
                   HTML fundamentals, advanced topics such as accessibility.
                   Strong understanding of HTML syntax and elements
@@ -95,7 +103,7 @@
                   aria-hidden="true"
                 />
 
-                <p class="card__title">CSS</p>
+                <h2 class="card__title">CSS</h2>
                 <p class="card__content">
                   CSS fundamentals proficiency in responsive CSS design,
                   including the use of media queries and grid-based layouts
@@ -111,7 +119,7 @@
                   aria-hidden="true"
                 />
 
-                <p class="card__title">JavaScript</p>
+                <h2 class="card__title">JavaScript</h2>
                 <p class="card__content">
                   Language fundamentals such as data types, variables,
                   functions, and control flow. DOM manipulation and event
@@ -128,7 +136,7 @@
                   aria-hidden="true"
                 />
 
-                <p class="card__title">SASS</p>
+                <h2 class="card__title">SASS</h2>
                 <p class="card__content">
                   SASS fundamentals. Proficiency in SASS features such as
                   variables, mixins, functions and nesting
@@ -144,7 +152,7 @@
                   aria-hidden="true"
                 />
 
-                <p class="card__title">Adobe Illustrator</p>
+                <h2 class="card__title">Adobe Illustrator</h2>
                 <p class="card__content">
                   Creating and editing vector graphics. Using tools such as the
                   Pen and Shape tools, as well as features like layers and
@@ -161,7 +169,7 @@
                   aria-hidden="true"
                 />
 
-                <p class="card__title">Git</p>
+                <h2 class="card__title">Git</h2>
                 <p class="card__content">
                   Git fundamentals, branching, proper commit messages as well as
                   using GitHub as a platform for collaborating on and sharing
@@ -176,7 +184,7 @@
 
     <footer class="footer">
       <div class="container">
-        <a href="/" class="logo link-light">
+        <a href="." class="logo link-light">
           <strong>Serdar Ulutas</strong>
         </a>
         <nav id="nav" role="navigation">
@@ -205,5 +213,11 @@
     </footer>
 
     <div class="click-to-close"></div>
+    <a
+      href="#page"
+      class="to-top"
+      aria-label="Click to go to the top of the page"
+      >To Top</a
+    >
   </body>
 </html>
