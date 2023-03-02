@@ -609,6 +609,7 @@ textarea {
   box-shadow: var(--shadow);
   background-color: var(--color-light-1);
   border-radius: 0.25em;
+  text-align: center;
 }
 .card img {
   width: auto;
